@@ -1,0 +1,18 @@
+.command {
+  color: green;
+  font-weight: 700;
+}
+
+.description {
+  white-space: pre-wrap;
+  margin-left: 1.5rem;
+}
+
+.help {
+  margin-top: 1.5rem;
+  margin-left: 2rem;
+}
+
+.helpCommand {
+  margin-bottom: 1rem;
+}

@@ -1,0 +1,38 @@
+.main {
+  background-color: #111514;
+  min-height: 100vh;
+  width: 100%;
+  color: white;
+  font-size: 16px;
+}
+
+.location {
+  color: pink;
+  font-weight: 700;
+}
+
+.command {
+  color: white;
+  font-weight: 500;
+}
+
+.input {
+  color: white;
+  font-weight: 500;
+  border: none;
+  margin: 0;
+  padding: 0;
+  flex-grow: 1;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-family: inherit;
+  caret-shape: block;
+  font-size: 16px;
+}
+
+.prompt {
+  display: flex;
+  width: 100%;
+  column-gap: 0.5rem;
+}
