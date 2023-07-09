@@ -1,12 +1,7 @@
-import React, { ReactElement } from "react";
+import React from 'react';
 
-const echo = (args: string[], setPrompt: Function, setOutput: Function) => {
-  setOutput((prev: ReactElement) => (
-    <>
-      {prev}
-      {args.join(" ")}
-    </>
-  ));
+const echo = (args: string[]) => {
+  return <>{args.join(' ')}</>;
 };
 
 export default echo;

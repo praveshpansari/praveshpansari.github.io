@@ -1,12 +1,10 @@
-import { ReactElement } from "react";
-import { IllegalArgumentError, commands } from "../terminal.model";
-import styles from "./commands.module.css";
+import { IllegalArgumentError, commands } from '../terminal.model';
+import styles from './commands.module.css';
 
-const help = (args: string[], setPrompt: Function, setOutput: Function) => {
+const help = (args: string[]) => {
   if (args.length) throw new IllegalArgumentError();
-  setOutput((prev: ReactElement) => (
+  return (
     <>
-      {prev}
       Here is the list of available commands.
       <div className={styles.help}>
         {[...commands.entries()].map((command, index) => (
@@ -18,7 +16,7 @@ const help = (args: string[], setPrompt: Function, setOutput: Function) => {
         ))}
       </div>
     </>
-  ));
+  );
 };
 
 export default help;
