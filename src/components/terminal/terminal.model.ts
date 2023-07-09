@@ -9,6 +9,12 @@ export interface ICommand {
   format: string;
 }
 
+export class IllegalArgumentError extends Error {
+  constructor(msg?: string) {
+    super(msg || "Invalid Arguments");
+  }
+}
+
 export const commands: Map<string, ICommand> = new Map([
   [
     "echo",

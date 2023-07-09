@@ -1,7 +1,7 @@
 "use client";
 import React, { ReactElement, useState } from "react";
 import styles from "./terminal.module.css";
-import { commands } from "./terminal.model";
+import { IllegalArgumentError, commands } from "./terminal.model";
 
 const Terminal = () => {
   const [output, setOutput] = useState<ReactElement>(<></>);
@@ -21,13 +21,18 @@ const Terminal = () => {
       ));
       let commandArray = command.split(" ");
 
-      if (commands.has(commandArray[0])) {
+      try {
         commands
-          .get(commandArray[0])
-          ?.invoke(commandArray.splice(1), setPrompt, setOutput);
-      } else {
-        let error =
-          'Command not found. Please use "help" command for the available list of commands.';
+          .get(commandArray[0])!
+          .invoke(commandArray.splice(1), setPrompt, setOutput);
+      } catch (e) {
+        let error = "";
+        if (e instanceof TypeError) {
+          error =
+            'Command not found. Please use "help" command for the available list of commands.';
+        } else if (e instanceof IllegalArgumentError) {
+          error = `Usage: ${commands.get(commandArray[0])!.format}`;
+        }
         setOutput((prev) => (
           <>
             {prev}
