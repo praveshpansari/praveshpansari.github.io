@@ -205,3 +205,42 @@
     text-align: left;
   }
 }
+
+.professional {
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 4%;
+}
+
+.works {
+  margin-top: 2rem;
+  margin-left: 6rem;
+  margin-right: 6rem;
+}
+
+.article {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 25%;
+  max-width: 38%;
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+  row-gap: 1rem;
+}
+
+.art {
+  font-size: max(0.5vw, 0.25rem);
+  color: palevioletred;
+}
+
+.link {
+  color: white;
+}
+
+.works_description {
+  flex: auto;
+  color: lightsteelblue;
+}

@@ -60,7 +60,7 @@ const about = (args: string[]) => {
             <div className={styles.information__description}>
               <b>Dhanu Info</b>
               <br />
-              <i>Software Engineer (Jan 2019 - Mar 2021)</i>
+              <i>Software Engineer (Jan 2019 - Mar 2019)</i>
               <br />
               <br />
               Ahoy there, fellow adventurer! Prepare to be regaled with the tale of my daring exploits at Dhanu Info,

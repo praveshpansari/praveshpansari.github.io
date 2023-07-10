@@ -2,6 +2,7 @@ import echo from './commands/echo';
 import help from './commands/help';
 import about from './commands/about';
 import { ReactElement } from 'react';
+import works from './commands/works';
 
 export interface ICommand {
   invoke?: (args: string[]) => ReactElement;
@@ -47,6 +48,14 @@ export const commands: Map<string, ICommand> = new Map([
       invoke: about,
       format: 'about',
       description: 'Display the education, experience & skills.',
+    },
+  ],
+  [
+    'works',
+    {
+      invoke: works,
+      format: 'works',
+      description: 'Display the projects created by me.',
     },
   ],
 ]);
