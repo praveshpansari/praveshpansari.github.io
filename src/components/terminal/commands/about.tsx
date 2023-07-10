@@ -31,6 +31,9 @@ const about = (args: string[]) => {
           </div>
 
           <div className={styles.information}>
+            <div className={styles.information__image}>
+              <Image src="/startup.png" width={0} height={0} className={`${styles.image} ${styles.image2}`} alt={''} />
+            </div>
             <div className={styles.information__description}>
               <b>Friend For You Tech</b>
               <br />
@@ -47,9 +50,6 @@ const about = (args: string[]) => {
               dreams to life, transforming mere ideas into tangible digital wonders. It was like being a digital wizard,
               spreading our tech magic far and wide. Oh, the joy of being a software engineer and co-founder, creating
               digital marvels while living the startup life!
-            </div>
-            <div className={styles.information__image}>
-              <Image src="/startup.png" width={0} height={0} className={`${styles.image} ${styles.image2}`} alt={''} />
             </div>
           </div>
 
