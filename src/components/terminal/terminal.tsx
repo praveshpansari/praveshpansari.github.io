@@ -6,7 +6,7 @@ import { IllegalArgumentError, commands } from './terminal.model';
 const Terminal = () => {
   const [output, setOutput] = useState<ReactElement>(<></>);
   const [command, setCommand] = useState('');
-  const [prompt, setPrompt] = useState('/praveshpansari.github.com:~$  ');
+  const [prompt, setPrompt] = useState('/praveshpansari.github.io:~$  ');
 
   const executeCommand = (e: React.KeyboardEvent<HTMLInputElement>) => {
     if (e.key === 'Enter') {
@@ -26,19 +26,21 @@ const Terminal = () => {
           if (commandArray.length > 1) throw new IllegalArgumentError();
           setOutput(<></>);
         } else if (commandArray[0] === 'cd') {
-          setPrompt('/praveshpansari.github.com/home:~$  ');
+          setPrompt('/praveshpansari.github.io/home:~$  ');
         } else {
-          setOutput((prev) => (
-            <>
-              {prev}
-              {commands.get(commandArray[0])?.invoke?.(commandArray.splice(1))}
-            </>
-          ));
+          if (commands.has(commandArray[0]))
+            setOutput((prev) => (
+              <>
+                {prev}
+                {commands.get(commandArray[0])?.invoke?.(commandArray.splice(1))}
+              </>
+            ));
+          else throw new TypeError();
         }
       } catch (e) {
         let error = '';
         if (e instanceof TypeError) {
-          error = 'Command not found. Please use "help" command for the available list of commands.';
+          error = `"${command}" Invalid command. Please use "help" command for the available list of commands.`;
         } else if (e instanceof IllegalArgumentError) {
           error = `Usage: ${commands.get(commandArray[0])?.format}`;
         }
