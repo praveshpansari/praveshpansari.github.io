@@ -67,6 +67,69 @@ const works = (args: string[]) => {
 ░╚═════╝░╚═╝░░╚═╝░╚════╝░╚═════╝░╚═╝░░╚═╝╚══════╝╚══════╝╚═╝░░╚═╝╚═╝░░╚═╝
 `;
 
+  const anpr = String.raw`
+░█████╗░███╗░░██╗██████╗░██████╗░  ░░░░░░  ███╗░░██╗███████╗██████╗░░█████╗░██╗░░░░░
+██╔══██╗████╗░██║██╔══██╗██╔══██╗  ░░░░░░  ████╗░██║██╔════╝██╔══██╗██╔══██╗██║░░░░░
+███████║██╔██╗██║██████╔╝██████╔╝  █████╗  ██╔██╗██║█████╗░░██████╔╝███████║██║░░░░░
+██╔══██║██║╚████║██╔═══╝░██╔══██╗  ╚════╝  ██║╚████║██╔══╝░░██╔═══╝░██╔══██║██║░░░░░
+██║░░██║██║░╚███║██║░░░░░██║░░██║  ░░░░░░  ██║░╚███║███████╗██║░░░░░██║░░██║███████╗
+╚═╝░░╚═╝╚═╝░░╚══╝╚═╝░░░░░╚═╝░░╚═╝  ░░░░░░  ╚═╝░░╚══╝╚══════╝╚═╝░░░░░╚═╝░░╚═╝╚══════╝
+`;
+
+  const pong = String.raw`
+██████╗░░█████╗░███╗░░██╗░██████╗░░░░░█████╗░██╗
+██╔══██╗██╔══██╗████╗░██║██╔════╝░░░░██╔══██╗██║
+██████╔╝██║░░██║██╔██╗██║██║░░██╗░░░░███████║██║
+██╔═══╝░██║░░██║██║╚████║██║░░╚██╗░░░██╔══██║██║
+██║░░░░░╚█████╔╝██║░╚███║╚██████╔╝██╗██║░░██║██║
+╚═╝░░░░░░╚════╝░╚═╝░░╚══╝░╚═════╝░╚═╝╚═╝░░╚═╝╚═╝
+`;
+
+  const cfx = String.raw`
+░█████╗░███████╗██╗░░██╗  ███████╗░██████╗██╗░░██╗░█████╗░██████╗░
+██╔══██╗██╔════╝╚██╗██╔╝  ██╔════╝██╔════╝██║░░██║██╔══██╗██╔══██╗
+██║░░╚═╝█████╗░░░╚███╔╝░  █████╗░░╚█████╗░███████║██║░░██║██████╔╝
+██║░░██╗██╔══╝░░░██╔██╗░  ██╔══╝░░░╚═══██╗██╔══██║██║░░██║██╔═══╝░
+╚█████╔╝██║░░░░░██╔╝╚██╗  ███████╗██████╔╝██║░░██║╚█████╔╝██║░░░░░
+░╚════╝░╚═╝░░░░░╚═╝░░╚═╝  ╚══════╝╚═════╝░╚═╝░░╚═╝░╚════╝░╚═╝░░░░░
+`;
+
+  const agency = String.raw`
+███╗░░░███╗██╗░░░██╗░██████╗████████╗██╗░█████╗░  ░█████╗░░██████╗░███████╗███╗░░██╗░█████╗░██╗░░░██╗
+████╗░████║╚██╗░██╔╝██╔════╝╚══██╔══╝██║██╔══██╗  ██╔══██╗██╔════╝░██╔════╝████╗░██║██╔══██╗╚██╗░██╔╝
+██╔████╔██║░╚████╔╝░╚█████╗░░░░██║░░░██║██║░░╚═╝  ███████║██║░░██╗░█████╗░░██╔██╗██║██║░░╚═╝░╚████╔╝░
+██║╚██╔╝██║░░╚██╔╝░░░╚═══██╗░░░██║░░░██║██║░░██╗  ██╔══██║██║░░╚██╗██╔══╝░░██║╚████║██║░░██╗░░╚██╔╝░░
+██║░╚═╝░██║░░░██║░░░██████╔╝░░░██║░░░██║╚█████╔╝  ██║░░██║╚██████╔╝███████╗██║░╚███║╚█████╔╝░░░██║░░░
+╚═╝░░░░░╚═╝░░░╚═╝░░░╚═════╝░░░░╚═╝░░░╚═╝░╚════╝░  ╚═╝░░╚═╝░╚═════╝░╚══════╝╚═╝░░╚══╝░╚════╝░░░░╚═╝░░░
+`;
+
+  const todo = String.raw`
+████████╗░█████╗░██████╗░░█████╗░  ░█████╗░██████╗░██████╗░
+╚══██╔══╝██╔══██╗██╔══██╗██╔══██╗  ██╔══██╗██╔══██╗██╔══██╗
+░░░██║░░░██║░░██║██║░░██║██║░░██║  ███████║██████╔╝██████╔╝
+░░░██║░░░██║░░██║██║░░██║██║░░██║  ██╔══██║██╔═══╝░██╔═══╝░
+░░░██║░░░╚█████╔╝██████╔╝╚█████╔╝  ██║░░██║██║░░░░░██║░░░░░
+░░░╚═╝░░░░╚════╝░╚═════╝░░╚════╝░  ╚═╝░░╚═╝╚═╝░░░░░╚═╝░░░░░
+`;
+
+  const draw = String.raw`
+██████╗░██████╗░░█████╗░░██╗░░░░░░░██╗░░░██╗░█████╗░
+██╔══██╗██╔══██╗██╔══██╗░██║░░██╗░░██║░░░██║██╔══██╗
+██║░░██║██████╔╝███████║░╚██╗████╗██╔╝░░░██║██║░░██║
+██║░░██║██╔══██╗██╔══██║░░████╔═████║░░░░██║██║░░██║
+██████╔╝██║░░██║██║░░██║░░╚██╔╝░╚██╔╝░██╗██║╚█████╔╝
+╚═════╝░╚═╝░░╚═╝╚═╝░░╚═╝░░░╚═╝░░░╚═╝░░╚═╝╚═╝░╚════╝░
+`;
+
+  const converter = String.raw`
+░█████╗░░█████╗░███╗░░██╗██╗░░░██╗███████╗██████╗░████████╗███████╗██████╗░
+██╔══██╗██╔══██╗████╗░██║██║░░░██║██╔════╝██╔══██╗╚══██╔══╝██╔════╝██╔══██╗
+██║░░╚═╝██║░░██║██╔██╗██║╚██╗░██╔╝█████╗░░██████╔╝░░░██║░░░█████╗░░██████╔╝
+██║░░██╗██║░░██║██║╚████║░╚████╔╝░██╔══╝░░██╔══██╗░░░██║░░░██╔══╝░░██╔══██╗
+╚█████╔╝╚█████╔╝██║░╚███║░░╚██╔╝░░███████╗██║░░██║░░░██║░░░███████╗██║░░██║
+░╚════╝░░╚════╝░╚═╝░░╚══╝░░░╚═╝░░░╚══════╝╚═╝░░╚═╝░░░╚═╝░░░╚══════╝╚═╝░░╚═╝
+`;
+
   return (
     <div className={styles.works}>
       <div className={styles.intro}>
@@ -74,13 +137,13 @@ const works = (args: string[]) => {
         of working on professionally. Imagine a tapestry woven with threads of pure excitement and digital prowess.
         I&apos;ve danced with websites that could make ballerinas jealous, creating virtual realms that captivated users
         from every corner of the digital universe. I&apos;ve delved deep into the enchanted land of app development,
-        conjuring mobile marvels that would make Tony Stark do a double take. I&apos;ve even embarked on daring quests to
-        build APIs that bridged the gap between different realms of data, ensuring smooth communication between all the
-        digital warriors out there. These projects were like a thrilling theme park of creativity, where each ride was
-        more exhilarating than the last. So, buckle up, my friend, and get ready for an adventure through the exciting
-        projects that have defined my professional journey!
+        conjuring mobile marvels that would make Tony Stark do a double take. I&apos;ve even embarked on daring quests
+        to build APIs that bridged the gap between different realms of data, ensuring smooth communication between all
+        the digital warriors out there. These projects were like a thrilling theme park of creativity, where each ride
+        was more exhilarating than the last. So, buckle up, my friend, and get ready for an adventure through the
+        exciting projects that have defined my professional journey!
       </div>
-      <div className={styles.professional}>
+      <div className={styles.projects}>
         <article className={styles.article}>
           <div className={styles.works_image}>
             <pre className={styles.art}>{cloudfix}</pre>
@@ -282,6 +345,214 @@ const works = (args: string[]) => {
             <b>Role: </b>Worked on the backend to create APIs for features such as placing order, invoicing, delivery.
             <br />
             <b>Leveraged Technologies: </b>JavaScript, TypeScript, Node.js, MongoDB, REST APIs
+          </div>
+        </article>
+      </div>
+      <div className={styles.intro}>
+        Behold, the realm of my personal projects where creativity knows no bounds! Behold my collection of apps that
+        could make the Internet itself jealous. I&apos;ve crafted virtual realms that allow users to do everything from
+        managing their personal finances with a hint of magic to planning intergalactic vacations with a touch of
+        whimsy. These web apps are like little portals into a world of convenience and delight. I&apos;ve dabbled in the
+        mystical arts of AI, conjuring up apps that would give R2-D2 a run for its money. These AI wonders can analyze
+        data, predict the future, and even make your toast perfectly golden every time! But that&apos;s not all, my
+        friend. Prepare to have your mind blown, for I have also ventured into the uncharted territory of programming
+        language creation. Yes, you heard it right! I&apos;ve built my very own mini programming language, complete with
+        a fancy compiler that transforms code into pure magic. It&apos;s like having my own secret language to
+        communicate with computers! So, get ready to explore a world where personal projects come to life, where
+        imagination meets technology, and where the sky is the limit! Let the quirkiness commence!
+      </div>
+      <div className={styles.projects}>
+        <article className={styles.article}>
+          <div className={styles.works_image}>
+            <pre className={styles.art}>{anpr}</pre>
+          </div>
+          <div className={styles.works_description}>
+            <b>Link: </b>
+            <Link
+              className={styles.link}
+              href="https://github.com/praveshpansari/anpr-nepal/"
+              target="_blank"
+              rel="external"
+            >
+              <i>https://github.com/praveshpansari/anpr-nepal</i>
+            </Link>
+            <br />
+            <br />
+            Autmatic Number Plate Recognition of Nepali Number Plates This project aims to locate and recognize the
+            characters from Nepali number plates on a vehicle. It reads symbols on license plates using optical
+            character recognition. License plate localization on the image, character segmentation, character
+            recognition of the segmented characters are the processes involved in a number plate recognition system. The
+            system then uses Convolutional Neural Network (CNN) for predicting each segmented character. The CNN is
+            trained on a 17,400 image dataset made using 30 Nepali characters generated from different computer fonts
+            and handwritten characters. The color of the plate is recognized using k-means clustering and choosing the
+            nearest centroid color. It is deployed using Flask.
+            <br />
+            <br />
+            <b>Leveraged Technologies: </b>YOLOv3, OpenCV, TensorFlow, CNN, NumPy, SciPy, Matplotlib, Python, Flask
+          </div>
+        </article>
+        <article className={styles.article}>
+          <div className={styles.works_image}>
+            <pre className={styles.art}>{cfx}</pre>
+          </div>
+          <div className={styles.works_description}>
+            <b>Link: </b>
+            <Link
+              className={styles.link}
+              href="https://github.com/praveshpansari/CFXEshop/"
+              target="_blank"
+              rel="external"
+            >
+              <i>https://github.com/praveshpansari/CFXEshop</i>
+            </Link>
+            <br />
+            <br />
+            This is an ecommerce website with three types of users: Buyers, Traders and Admin. Each user has a different
+            dashboard and different functions. Buyers can favorite products, add them to cart and buy them using PayPal,
+            traders can sell and manage orders and admins can manage users, products and orders. After a successful
+            order invoice is also emailed to the customer. There is also a management dashboard build using APEX oracle
+            to display daily finance and delivery and monthly sales reports by making use of Oracle functions,
+            procedures & triggers are used.
+            <br />
+            <br />
+            <b>Leveraged Technologies: </b> XAMPP, MariaDB, PHP, jQuery, HTML/CSS/JS, Oracle Database, PL/SQL, Bootstrap
+          </div>
+        </article>
+        <article className={styles.article}>
+          <div className={styles.works_image}>
+            <pre className={styles.art}>{pong}</pre>
+          </div>
+          <div className={styles.works_description}>
+            <b>Link: </b>
+            <Link
+              className={styles.link}
+              href="https://github.com/praveshpansari/pong-ai/"
+              target="_blank"
+              rel="external"
+            >
+              <i>https://github.com/praveshpansari/pong-ai</i>
+            </Link>
+            <br />
+            <br />
+            An old time classic Pong game made with a retro look. Supports 2 player with one keyboard (WASD & arrows).
+            There is also an AI player which can be played against and the difficulty also can be adjusted. There game
+            difficulty is automatically scaled, the longer the game goes on, the game becomes more difficult (ball
+            velocity increases).
+            <br />
+            <br />
+            <b>Leveraged Technologies: </b>Lua, Love2D
+          </div>
+        </article>
+        <article className={styles.article}>
+          <div className={styles.works_image}>
+            <pre className={styles.art}>{todo}</pre>
+          </div>
+          <div className={styles.works_description}>
+            <b>Link: </b>
+            <Link
+              className={styles.link}
+              href="https://github.com/praveshpansari/todo-app/"
+              target="_blank"
+              rel="external"
+            >
+              <i>https://github.com/praveshpansari/todo-app</i>
+            </Link>
+            <br />
+            <br />
+            A todo android application that allows you to create tasks based on priority and date, mark them complete
+            and delete them. The basic CRUD operations for TODO exists like adding, updating, listing them with Recycle
+            view and deleting them. There is a login screen with validation and shared preferences. Users can view TODOs
+            in 4 categories of today, tommorow, later & older. All views have landscape layout and all update operations
+            have validations.
+            <br />
+            <br />
+            <b>Leveraged Technologies: </b>Android Studio, JAVA, RoomDB
+          </div>
+        </article>
+        <article className={styles.article}>
+          <div className={styles.works_image}>
+            <pre className={styles.art}>{draw}</pre>
+          </div>
+          <div className={styles.works_description}>
+            <b>Link: </b>
+            <Link
+              className={styles.link}
+              href="https://github.com/praveshpansari/Draw.io/"
+              target="_blank"
+              rel="external"
+            >
+              <i>https://github.com/praveshpansari/Draw.io</i>
+            </Link>
+            <br />
+            <br />
+            This is a simple programming environment, where commands can be used to manipulate shapes and lines on an
+            artboard. The artboard is the place where all drawings and the cursor are rendered. The menu allows file
+            operations like save and load, exit, and the about information.The command line runs single commands while
+            the code editor can run multiple commands. The output box displays the log information and error
+            information. The syntax button analyzes the code in the code editor and displays any errors it found in the
+            log box. Four types of shapes can be drawn: rectangle, square, circle and triangle. A line can be drawn
+            given a destination position. The shapes can be drawn outlined or filled and their color can be changed.
+            Variables can be declared, a while loop is present and both parameterized and parameter less functions can
+            be implemented.
+            <br />
+            First the lexer tokenizes the input, the parser parses the command and the painter then updates the
+            artboard.
+            <br />
+            <br />
+            <b>Leveraged Technologies: </b>C#, Git, Visual Studio, .NET Framework
+          </div>
+        </article>
+        <article className={styles.article}>
+          <div className={styles.works_image}>
+            <pre className={styles.art}>{agency}</pre>
+          </div>
+          <div className={styles.works_description}>
+            <b>Link: </b>
+            <Link
+              className={styles.link}
+              href="https://github.com/praveshpansari/Web-Development-Agency/"
+              target="_blank"
+              rel="external"
+            >
+              <i>https://github.com/praveshpansari/Web-Development-Agency</i>
+            </Link>
+            <br />
+            <br />
+            Mystic is a creative agency aiming at providing digital services like digital marketing, website and app
+            development, branding and designing. It is a static website developed using vanilla web technologies like
+            HTML, CSS & JS. Includes particle.js for reverse snow effect on the hero section, an eye catching theme with
+            parallax scroll and beautiful animations. There is a home page, about page, contact page, pricing page and a
+            login page.
+            <br />
+            <br />
+            <b>Leveraged Technologies: </b>HTML, CSS, JavaScript, Git
+          </div>
+        </article>
+        <article className={styles.article}>
+          <div className={styles.works_image}>
+            <pre className={styles.art}>{converter}</pre>
+          </div>
+          <div className={styles.works_description}>
+            <b>Link: </b>
+            <Link
+              className={styles.link}
+              href="https://github.com/praveshpansari/converter/"
+              target="_blank"
+              rel="external"
+            >
+              <i>https://github.com/praveshpansari/converter</i>
+            </Link>
+            <br />
+            <br />
+            A convertor program consisiting of several metrics and currency conversion units. Metric conversions like
+            acres to hectares, mph to kmh, yards to meters, celsius to farenheit etc are present. Currency conversions
+            can be dont from GBP to any currency. The target currency can be loaded from a file which has the currency
+            name, symbol and the conversion rate. The sample file provided consists of currencis like USD, AUD, Euro,
+            THB etc. One can also perform reverse calculations using the reverse conversion option. The metric
+            conversions are reversed and all the currencies now convert to GBP.
+            <br />
+            <br />
+            <b>Leveraged Technologies: </b>Eclipse IDE, Java
           </div>
         </article>
       </div>
