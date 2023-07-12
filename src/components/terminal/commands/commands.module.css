@@ -240,7 +240,34 @@
   color: white;
 }
 
+.name {
+  margin-bottom: 2rem;
+}
+
+.name .art {
+  font-size: max(0.75vw, 0.375rem);
+  color: lightseagreen;
+}
+
 .works_description {
   flex: auto;
   color: lightsteelblue;
+}
+
+.profile {
+  margin: 2rem 5rem;
+}
+
+.resume {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.namecard {
+    margin-bottom: 1rem;
+}
+
+.contact {
+    margin-left: 1rem;
+    margin-top: 0.5rem;
 }
