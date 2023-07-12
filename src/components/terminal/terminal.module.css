@@ -6,16 +6,19 @@
   font-size: 16px;
   padding-left: 1rem;
   padding-right: 1rem;
+  padding-bottom: 1rem;
 }
 
 .location {
   color: pink;
   font-weight: 700;
+  height: 100%;
 }
 
 .command {
   color: white;
   font-weight: 500;
+
 }
 
 .input {
@@ -24,6 +27,7 @@
   border: none;
   margin: 0;
   padding: 0;
+  height: min-content;
   flex-grow: 1;
   background: transparent;
   border: none;
@@ -35,6 +39,7 @@
 
 .prompt {
   display: flex;
+  align-items: flex-start;
   width: 100%;
   column-gap: 0.5rem;
 }
