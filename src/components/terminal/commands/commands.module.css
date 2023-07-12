@@ -207,7 +207,7 @@
 }
 
 .projects {
-  margin-top: 2rem;
+  margin-top: 1rem;
   display: flex;
   flex-wrap: wrap;
   column-gap: 4%;
@@ -215,8 +215,8 @@
 
 .works {
   margin-top: 2rem;
-  margin-left: 6rem;
-  margin-right: 6rem;
+  margin-left: 4rem;
+  margin-right: 4rem;
 }
 
 .article {
@@ -263,11 +263,55 @@
   margin-bottom: 1rem;
 }
 
+.intro {
+  border-bottom: 8px double mediumblue;
+  padding-bottom: 1rem;
+}
+
 .namecard {
-    margin-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 
 .contact {
-    margin-left: 1rem;
-    margin-top: 0.5rem;
+  margin-left: 1rem;
+  margin-top: 0.5rem;
+}
+
+.personal_projects .art {
+  color: palegoldenrod;
+}
+
+.personal_projects .works_description {
+  color: thistle;
+}
+
+.titles {
+  margin-bottom: 1rem;
+  color: mediumblue;
+  letter-spacing: 0.05em;
+  background-color: lightgrey;
+  width: max-content;
+  font-weight: bold;
+  position: relative;
+}
+
+.professional,
+.personal {
+  border: 2px solid lightsteelblue;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.personal {
+  border-color: thistle;
+
+  .titles {
+    color: darkcyan;
+  }
+
+  .intro {
+    border-color: darkcyan;
+  }
 }
