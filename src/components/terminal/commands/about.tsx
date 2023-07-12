@@ -10,7 +10,14 @@ const about = (args: string[]) => {
           <div className={styles.heading}>Experience</div>
           <div className={styles.information}>
             <div className={styles.information__image}>
-              <Image src="/trilogy.png" width={0} height={0} className={` ${styles.image1} ${styles.image}`} alt={''} />
+              <Image
+                priority
+                src="/trilogy.png"
+                width={0}
+                height={0}
+                className={` ${styles.image1} ${styles.image}`}
+                alt="Clipart for Trilogy"
+              />
             </div>
             <div className={styles.information__description}>
               <div className={styles.anim}>
@@ -32,7 +39,14 @@ const about = (args: string[]) => {
 
           <div className={styles.information}>
             <div className={styles.information__image}>
-              <Image src="/startup.png" width={0} height={0} className={`${styles.image} ${styles.image2}`} alt={''} />
+              <Image
+                priority
+                src="/startup.png"
+                width={0}
+                height={0}
+                className={`${styles.image} ${styles.image2}`}
+                alt="Clip art for 2fy tech"
+              />
             </div>
             <div className={styles.information__description}>
               <b>Friend For You Tech</b>
@@ -55,7 +69,14 @@ const about = (args: string[]) => {
 
           <div className={styles.information}>
             <div className={styles.information__image}>
-              <Image src="/contract.png" width={0} height={0} className={`${styles.image} ${styles.image3}`} alt={''} />
+              <Image
+                priority
+                src="/contract.png"
+                width={0}
+                height={0}
+                className={`${styles.image} ${styles.image3}`}
+                alt="Clip art for dhanu info"
+              />
             </div>
             <div className={styles.information__description}>
               <b>Dhanu Info</b>
@@ -80,11 +101,12 @@ const about = (args: string[]) => {
           <div className={styles.information}>
             <div className={styles.information__image}>
               <Image
+                priority
                 src="/university.png"
                 width={0}
                 height={0}
                 className={`${styles.image} ${styles.image4}`}
-                alt={''}
+                alt="a university image"
               />
             </div>
             <div className={styles.information__description}>
@@ -106,7 +128,14 @@ const about = (args: string[]) => {
           <div className={styles.heading}>Skills</div>
           <div className={styles.information}>
             <div className={styles.information__image}>
-              <Image src="/skills.png" width={0} height={0} className={`${styles.image} ${styles.image5}`} alt={''} />
+              <Image
+                priority
+                src="/skills.png"
+                width={0}
+                height={0}
+                className={`${styles.image} ${styles.image5}`}
+                alt="image showing programming languages"
+              />
             </div>
             <div className={styles.information__description}>
               <ul className={styles.skillsList}>

@@ -82,8 +82,10 @@ const Terminal = () => {
   }, [load]);
 
   useEffect(() => {
-    inputEl.current?.scrollIntoView({ behavior: 'smooth', block: 'center', inline: 'start' });
-  });
+    setTimeout(() => {
+      window.scrollTo({ left: 0, top: document.body.scrollHeight, behavior: 'smooth' });
+    }, 100);
+  }, [output]);
 
   return (
     <div className={styles.main}>
