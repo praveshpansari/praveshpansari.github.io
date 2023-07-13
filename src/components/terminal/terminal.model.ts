@@ -2,7 +2,7 @@ import echo from './commands/echo';
 import help from './commands/help';
 import about from './commands/about';
 import { ReactElement } from 'react';
-import works from './commands/works';
+import works from './commands/works/works';
 import profile from './commands/profile';
 
 export interface ICommand {
