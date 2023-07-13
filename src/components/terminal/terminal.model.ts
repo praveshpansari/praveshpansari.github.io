@@ -31,7 +31,7 @@ export const commands: Map<string, ICommand> = new Map([
     'cd',
     {
       format: 'cd [dir]',
-      description: 'Change the current working directory.',
+      description: 'Change the current working directory. Locked.',
     },
   ],
   ['clear', { format: 'clear', description: 'Clears the terminal.' }],
@@ -48,7 +48,7 @@ export const commands: Map<string, ICommand> = new Map([
     {
       invoke: about,
       format: 'about',
-      description: 'Display the education, experience & skills.',
+      description: 'Display my experience, education and skills.',
     },
   ],
   [
@@ -56,7 +56,7 @@ export const commands: Map<string, ICommand> = new Map([
     {
       invoke: works,
       format: 'works',
-      description: 'Display the projects created by me.',
+      description: 'Display the projects I worked on professionally and personally.',
     },
   ],
   [
@@ -64,7 +64,7 @@ export const commands: Map<string, ICommand> = new Map([
     {
       invoke: profile,
       format: 'profile',
-      description: 'Contact me',
+      description: 'My contact information and resume.',
     },
   ],
 ]);
