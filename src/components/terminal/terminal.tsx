@@ -100,10 +100,13 @@ const Terminal = () => {
     <div className={styles.main}>
       <div>{output}</div>
       <div className={styles.prompt}>
-        <div className={styles.location}>{prompt}</div>
+        <label htmlFor="command" className={styles.location}>
+          {prompt}
+        </label>
         <input
           type="text"
           ref={inputEl}
+          id="command"
           className={styles.input}
           value={command}
           autoFocus
