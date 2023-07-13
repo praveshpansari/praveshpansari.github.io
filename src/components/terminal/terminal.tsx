@@ -4,7 +4,16 @@ import styles from './terminal.module.css';
 import { IllegalArgumentError, commands } from './terminal.model';
 
 const Terminal = () => {
-  const [output, setOutput] = useState<ReactElement>(<></>);
+  const [output, setOutput] = useState<ReactElement>(
+    <>
+      <br />
+      <div className={styles.welcome}>
+        Welcome to my porfolio! You can know about my experience, education and skills as well as access the projects I
+        have worked on both professionally and personally. You can use the &quot;help&quot; command to get started.
+      </div>
+      <br />
+    </>
+  );
   const [command, setCommand] = useState('');
   const [prompt, setPrompt] = useState('/praveshpansari.github.io:~$  ');
   const [load, setLoad] = useState(false);

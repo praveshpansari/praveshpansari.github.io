@@ -9,6 +9,11 @@
   padding-bottom: 1rem;
 }
 
+.welcome {
+  color: palegoldenrod;
+  font-weight: bold;
+}
+
 .location {
   color: pink;
   font-weight: 700;
@@ -18,7 +23,6 @@
 .command {
   color: white;
   font-weight: 500;
-
 }
 
 .input {
