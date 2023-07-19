@@ -385,6 +385,10 @@
   .contact {
     margin-left: 0;
   }
+
+  .profile {
+    margin: 2rem 0.5rem;
+  }
 }
 
 @media screen and (max-width: 361px) {
