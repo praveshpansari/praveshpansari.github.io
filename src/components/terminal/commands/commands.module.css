@@ -165,12 +165,23 @@
   color: white;
 }
 
+.link i {
+  -ms-word-break: break-all;
+  word-break: break-all;
+  /* Non standard for webkit */
+  word-break: break-word;
+
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+}
+
 .name {
   margin-bottom: 2rem;
 }
 
 .name .art {
-  font-size: max(0.75vw, 0.375rem);
   color: lightseagreen;
 }
 
@@ -373,5 +384,12 @@
 
   .contact {
     margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 361px) {
+  .works {
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
   }
 }
